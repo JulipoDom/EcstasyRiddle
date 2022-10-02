@@ -82,6 +82,7 @@ section{
 #sobre{
     padding-top: 2vw;
     flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 @keyframes appear-in {
