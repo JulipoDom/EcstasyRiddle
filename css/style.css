@@ -75,7 +75,6 @@ section{
     display: flex;
     align-items: center;
 }
-
 #index{
     animation: fade 5s;
 }
@@ -114,12 +113,19 @@ section{
     margin: 0px 0px;
     padding-left: 10%;
     padding-right: 10%;
+    flex-direction: column;
 }
 
 #texto p{
     margin-top: 5%;
-    font-size: 1.5vw;
+    font-size: 2vw;
     text-align: justify;
+}
+
+#secreto{
+    font-size: 0.05vw;
+    color: white;
+    cursor: default;
 }
 
 @keyframes up-down {
@@ -164,6 +170,7 @@ section{
     font-family:'Noto Sans', sans-serif;
     text-align: center;
     font-size: 2vw;
+    animation: fade 5s;
 }
 
 
