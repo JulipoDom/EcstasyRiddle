@@ -139,6 +139,7 @@ section{
     background: url('img/hexagono.png') no-repeat center;
     background-size: 50vw 50vw;
     animation: up-down 3s infinite ease-in-out alternate;
+    animation: fade 5s ;
 }
 
 
@@ -160,7 +161,6 @@ section{
     font-family:'Noto Sans', sans-serif;
     text-align: center;
     font-size: 2vw;
-    animation: fade 5s ;
 }
 
 
