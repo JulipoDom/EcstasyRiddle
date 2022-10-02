@@ -170,7 +170,6 @@ section{
     font-family:'Noto Sans', sans-serif;
     text-align: center;
     font-size: 2vw;
-    animation: fade 5s;
 }
 
 
@@ -190,7 +189,6 @@ section{
     border-radius: 100px;
     border: #929292 3px solid;
     transition: all 0.4s;
-    animation: fade 5s;
 }
 
 #img_button{
