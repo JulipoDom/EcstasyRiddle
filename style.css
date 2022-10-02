@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0px auto;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141313;
+}
+
+div#logo{
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#logo img{
+    width: 6vw;
+    height: 6vw;
+}
+
+@keyframes right-slide {
+    0%{
+        transform: translateX(30vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+div#menu{
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    color: #fafafa;
+    animation: right-slide 3s normal;
+}
+#menu p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+#menu a{
+    margin-right: 1.5vw;
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.5s;
+    font-size: 1.5vw;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 1.5vw;
+    
+}
+
+#menu a:hover{
+    color: #cccccc;
+    border-bottom: 1px solid  #cccccc;
+}
+
+section{
+    width: 90%;
+    height: 60vw;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+#index{
+    animation: fade 5s;
+}
+
+#sobre{
+    padding-top: 2vw;
+    flex-direction: column;
+}
+
+@keyframes appear-in {
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+#titulo{
+    display: flex;
+    flex: 10%;
+    align-items: center;
+    justify-content: center;
+    animation: appear-in 5s;
+    animation-delay: 0s;
+}
+
+#titulo h1{
+    font-size: 3vw;
+}
+
+#texto{
+    animation: appear-in 5s;
+    display: flex;
+    flex: 90%;
+    margin: 0px 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+}
+
+#texto p{
+    margin-top: 5%;
+    font-size: 2vw;
+    text-align: justify;
+}
+
+#secreto{
+    font-size: 0.05vw;
+    color: white;
+    cursor: default;
+}
+
+@keyframes up-down {
+    
+    0%{
+        transform: translateY(3vw);
+    }
+
+    100%{
+        transform: translateY(-3vw);
+    }
+    
+}
+
+#nome{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('img/hexagono.png') no-repeat center;
+    background-size: 50vw 50vw;
+    animation: up-down 3s infinite ease-in-out alternate;
+}
+
+
+@keyframes fade{
+
+    0%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+#nome h1{
+    font-family:'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 2vw;
+    animation: fade 5s;
+}
+
+
+#jogar{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogar a{
+    display: flex;
+    width: 16vw;
+    height: 6vw;
+    text-decoration: none;
+    background-color: #141313;
+    border-radius: 100px;
+    border: #929292 3px solid;
+    transition: all 0.4s;
+    animation: fade 5s;
+}
+
+#img_button{
+    flex: 100%;
+    background: url('img/Iniciar.png') no-repeat center;
+    background-size: 70% 70%;
+    transition: 0.4 all;
+}
+
+@keyframes trocar-img-in {
+    
+    0%{
+        background: url('img/Iniciar.png') no-repeat center;
+        background-size: 80% 80%;
+        opacity: 100%;
+    }
+    49%{
+        opacity: 2%;
+    }
+    50%{
+        background: no-repeat center;
+        size: 35% 90%;
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        background: url('img/ER.png') no-repeat center;
+        background-size: 35% 90%;
+    }
+
+}
+@keyframes trocar-img-out {
+    
+    0%{
+        opacity: 100%;
+        background: url('img/ER.png') no-repeat center;
+        background-size: 35% 90%;
+        
+    }
+    49%{
+        opacity: 2%;
+    }
+    50%{
+        opacity: 0%;
+        background: no-repeat center;
+        size: 80% 80%;
+        scale: 0.75;
+    }
+    100%{
+        opacity: 100%;
+        background: url('img/Iniciar.png') no-repeat center;
+        background-size: 80% 80%;
+        opacity: 100%;
+        scale: 0.9;
+    }
+
+}
+
+#jogar a:hover{
+    transform: scale(1.25);
+}
+
+#jogar a:hover #img_button{
+    animation: trocar-img-in 1s ease-out;
+    background: url('img/ER.png') no-repeat center;
+    background-size: 35% 90%;
+}
+#jogar a:not(:hover) #img_button{
+    animation: trocar-img-out 1s ease-in-out;
+}
+#mobile_img{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+}
+
+footer h1{
+    color: #fafafa;
+    font-size: 1vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        height: 35vw;
+    }
+    #logo img{
+        width: 20vw;
+        height: 20vw;
+    }
+    #menu a{
+        font-size: 3.5vw;
+    }
+    section{
+        flex-direction: column;
+        height: 160vw;
+    }
+    #titulo h1{
+        font-size: 9vw;
+    }
+    #texto p {
+        font-size: 5.5vw;
+    }
+    #nome{
+        height: 50%;
+        width: 100%;
+        background-size: 72vw 72vw;
+    }
+    #nome h1{
+        font-size: 3vw;
+    }
+    #jogar{
+        height: 50%;
+        width: 100%;
+    }
+    #mobile_img{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile_img img{
+        width: 30vw;
+        height: 30vw;
+    }
+    #button{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        height: 30vw;
+    }
+    footer h1{
+        font-size: 2vw;
+    }
+  }
