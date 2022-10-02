@@ -99,6 +99,17 @@ section{
     font-family: 'Noto Sans' ,sans-serif;
 }
 
+#fases{
+    padding-top: 2vw;
+    flex-direction: column;
+    animation: fade 5s;
+}
+
+#fases h1{
+    font-size: 3vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
 
 @keyframes appear-in {
     0%{
@@ -329,6 +340,49 @@ textarea{
     font-size: 1.5vw;
 }
 
+#all_levels{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fases{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fase{
+    width: 24vw;
+    height: 13.5vw;
+    margin: 1vw;
+    border-radius: 1vw;
+    border: solid 1px #141313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+.fase a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.fase img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+}
+
+.fase:hover{
+    transform: scale(1.10);
+}
+
 footer{
     width: 100%;
     height: 7vw;
@@ -412,7 +466,7 @@ footer h1{
     }
 
     #formulario h1{
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     form p{
@@ -438,6 +492,23 @@ footer h1{
     input[type="radio"]{
         width: 3vw;
         height: 3vw;
+    }
+
+    #fases h1{
+        font-size: 5vw;
+    }
+
+    #all_levels{
+        flex-direction: row;
+    }
+    .fases{
+        height: 100%;
+        width: 50%;
+        flex-direction: column;
+    }
+    .fase{
+        width: 32vw;
+        height: 18vw;
     }
     
     footer{
