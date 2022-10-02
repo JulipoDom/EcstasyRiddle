@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 *{
-    margin: 0px auto;
+    margin: 0px;
 }
 
 body{
@@ -75,6 +75,7 @@ section{
     display: flex;
     align-items: center;
 }
+
 #index{
     animation: fade 5s;
 }
@@ -84,6 +85,20 @@ section{
     flex-direction: column;
     font-family: 'Noto Sans', sans-serif;
 }
+
+#formulario{
+    padding-top: 2vw;
+    flex-direction: column;
+    height: 80vw;
+    animation: fade 5s;
+}
+
+#formulario h1{
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Noto Sans' ,sans-serif;
+}
+
 
 @keyframes appear-in {
     0%{
@@ -229,15 +244,18 @@ section{
         background-size: 35% 90%;
         
     }
+    
     49%{
         opacity: 2%;
     }
+    
     50%{
         opacity: 0%;
         background: no-repeat center;
         size: 80% 80%;
         scale: 0.75;
     }
+    
     100%{
         opacity: 100%;
         background: url('img/Iniciar.png') no-repeat center;
@@ -257,11 +275,58 @@ section{
     background: url('img/ER.png') no-repeat center;
     background-size: 35% 90%;
 }
+
 #jogar a:not(:hover) #img_button{
     animation: trocar-img-out 1s ease-in-out;
 }
+
 #mobile_img{
     display: none;
+}
+
+form{
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    background-color: #929292;
+    border-radius: 5vw;
+    border: #141313 solid 2px;
+}
+
+form p {
+    font-size: 2vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+label{
+    font-size: 2vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+input, textarea{
+    font-size: 1vw;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 1vw;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    accent-color: black;
+    height: 1vw;
+    width: 1vw;
+}
+
+textarea{
+    font-size: 1.5vw;
+}
+
+#radio{
+    font-size: 1.5vw;
 }
 
 footer{
@@ -284,20 +349,25 @@ footer h1{
     header{
         height: 35vw;
     }
+    
     #logo img{
         width: 20vw;
         height: 20vw;
     }
+    
     #menu a{
         font-size: 3.5vw;
     }
+    
     section{
         flex-direction: column;
         height: 160vw;
     }
+    
     #titulo h1{
         font-size: 9vw;
     }
+    
     #texto p {
         font-size: 5.5vw;
     }
@@ -306,13 +376,16 @@ footer h1{
         width: 100%;
         background-size: 72vw 72vw;
     }
+    
     #nome h1{
         font-size: 3vw;
     }
+    
     #jogar{
         height: 50%;
         width: 100%;
     }
+    
     #mobile_img{
         height: 100%;
         width: 50%;
@@ -320,10 +393,12 @@ footer h1{
         justify-content: center;
         align-items: center;
     }
+    
     #mobile_img img{
         width: 30vw;
         height: 30vw;
     }
+    
     #button{
         height: 100%;
         width: 50%;
@@ -331,10 +406,46 @@ footer h1{
         align-items: center;
         justify-content: center;
     }
+    
+    #formulario{
+        height: 160vw;
+    }
+
+    #formulário h1{
+        font-size: 8vw;
+    }
+
+    form p{
+        font-size: 6vw;
+    }
+
+    label{
+        font-size: 6vw;
+    }
+
+    input{
+        font-size: 3vw;
+    }
+
+    textarea{
+        font-size: 4.5;
+    }
+
+    #radio{
+        font-size: 4vw;
+    }
+
+    input[type="radio"]{
+        width: 3vw;
+        height: 3vw;
+    }
+    
     footer{
         height: 30vw;
     }
+    
     footer h1{
         font-size: 2vw;
     }
+    
   }
