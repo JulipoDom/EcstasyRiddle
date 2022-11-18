@@ -1,0 +1,238 @@
+#index{
+    animation: fade 5s;
+}
+
+@keyframes up-down {
+    
+    0%{
+        transform: translateY(3vw);
+    }
+
+    100%{
+        transform: translateY(-3vw);
+    }
+    
+}
+
+#nome{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('img/hexagono.webp') no-repeat center;
+    background-size: 50vw 50vw;
+    animation: up-down 3s infinite ease-in-out alternate;
+}
+
+#nome h1{
+    font-family:'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 2vw;
+}
+
+
+#jogar{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jogar a{
+    display: flex;
+    width: 16vw;
+    height: 6vw;
+    text-decoration: none;
+    background-color: #141313;
+    border-radius: 100px;
+    border: #929292 3px solid;
+    transition: all 0.4s;
+}
+
+#img_button{
+    flex: 100%;
+    background: url('img/Iniciar.webp') no-repeat center;
+    background-size: 70% 70%;
+    transition: 0.4 all;
+}
+
+#img_buttonUs{
+    flex: 100%;
+    background: url('img/Start.webp') no-repeat center;
+    background-size: 70% 70%;
+    transition: 0.4 all;
+}
+
+@keyframes trocar-img-in {
+    
+    0%{
+        background: url('img/Iniciar.webp') no-repeat center;
+        background-size: 80% 80%;
+        opacity: 100%;
+    }
+    49%{
+        opacity: 2%;
+    }
+    50%{
+        background: no-repeat center;
+        size: 35% 90%;
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        background: url('img/ER.webp') no-repeat center;
+        background-size: 35% 90%;
+    }
+
+}
+
+@keyframes trocar-img-out {
+    
+    0%{
+        opacity: 100%;
+        background: url('img/ER.webp') no-repeat center;
+        background-size: 35% 90%;
+        
+    }
+    
+    49%{
+        opacity: 2%;
+    }
+    
+    50%{
+        opacity: 0%;
+        background: no-repeat center;
+        size: 80% 80%;
+        scale: 0.75;
+    }
+    
+    100%{
+        opacity: 100%;
+        background: url('img/Iniciar.webp') no-repeat center;
+        background-size: 80% 80%;
+        opacity: 100%;
+        scale: 0.9;
+    }
+}
+
+    @keyframes trade-img-in {
+    
+        0%{
+            background: url('img/Start.webp') no-repeat center;
+            background-size: 80% 80%;
+            opacity: 100%;
+        }
+        49%{
+            opacity: 2%;
+        }
+        50%{
+            background: no-repeat center;
+            size: 35% 90%;
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+            background: url('img/ER.webp') no-repeat center;
+            background-size: 35% 90%;
+        }
+    
+    }
+    
+    @keyframes trade-img-out {
+        
+        0%{
+            opacity: 100%;
+            background: url('img/ER.webp') no-repeat center;
+            background-size: 35% 90%;
+            
+        }
+        
+        49%{
+            opacity: 2%;
+        }
+        
+        50%{
+            opacity: 0%;
+            background: no-repeat center;
+            size: 80% 80%;
+            scale: 0.75;
+        }
+        
+        100%{
+            opacity: 100%;
+            background: url('img/Start.webp') no-repeat center;
+            background-size: 80% 80%;
+            opacity: 100%;
+            scale: 0.9;
+        }
+    
+}
+
+#jogar a:hover{
+    transform: scale(1.25);
+}
+
+#jogar a:hover #img_button{
+    animation: trocar-img-in 1s ease-out;
+    background: url('img/ER.webp') no-repeat center;
+    background-size: 35% 90%;
+}
+
+#jogar a:hover #img_buttonUs{
+    animation: trade-img-in 1s ease-out;
+    background: url('img/ER.webp') no-repeat center;
+    background-size: 35% 90%;
+}
+
+#jogar a:not(:hover) #img_button{
+    animation: trocar-img-out 1s ease-in-out;
+}
+
+#jogar a:not(:hover) #img_buttonUs{
+    animation: trade-img-out 1s ease-in-out;
+}
+
+#mobile_img{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  
+    #nome{
+        height: 50%;
+        width: 100%;
+        background-size: 72vw 72vw;
+    }
+    
+    #nome h1{
+        font-size: 3vw;
+    }
+    
+    #jogar{
+        height: 50%;
+        width: 100%;
+    }
+    
+    #mobile_img{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #mobile_img img{
+        width: 30vw;
+        height: 30vw;
+    }
+    
+    #button{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

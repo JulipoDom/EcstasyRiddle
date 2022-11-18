@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* General css*/
+*{
+    margin: 0px;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #fafafa;
+}
+
+header{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #141313;
+}
+
+div#logo{
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#logo img{
+    width: 6vw;
+    height: 6vw;
+}
+
+@keyframes right-slide {
+    0%{
+        transform: translateX(30vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+div#menu{
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    color: #fafafa;
+    animation: right-slide 3s normal;
+}
+#menu p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+#menu a{
+    margin-right: 1.5vw;
+    text-decoration: none;
+    color: #fafafa;
+    transition: all 0.5s;
+    font-size: 1.5vw;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 1.5vw;
+    
+}
+
+#menu a:hover{
+    color: #cccccc;
+    border-bottom: 1px solid  #cccccc;
+}
+
+section{
+    width: 90%;
+    height: 60vw;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #141313;
+}
+
+footer h1{
+    color: #fafafa;
+    font-size: 1vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#linguagem{
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+    margin-left: 1vw;
+    object-fit: fill;
+    justify-content: center;
+    align-items: center;
+}
+
+#linguagem img{
+    width: 5vw;
+}
+
+@keyframes appear-in {
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+@keyframes fade{
+
+    0%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    /*Geral Mobile css*/
+
+    header{
+        height: 35vw;
+    }
+    
+    #logo img{
+        width: 20vw;
+        height: 20vw;
+    }
+    
+    #menu a{
+        font-size: 3.5vw;
+    }
+    
+    section{
+        flex-direction: column;
+        height: 185vw;
+    }
+
+    footer{
+        height: 30vw;
+    }
+    
+    footer h1{
+        font-size: 2vw;
+    }
+
+  }

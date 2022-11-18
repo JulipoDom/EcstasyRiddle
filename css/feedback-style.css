@@ -1,0 +1,98 @@
+#formulario{
+    padding-top: 2vw;
+    flex-direction: column;
+    height: 60vw;
+    animation: fade 5s;
+}
+
+#formulario h1{
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'Noto Sans' ,sans-serif;
+}
+
+form{
+    width: 50%;
+    height: 90%;
+    margin: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    background-color: #cccccc;
+    border-radius: 1vw;
+    border: #141313 solid 2px;
+}
+
+form p {
+    font-size: 1.25vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+label{
+    font-size: 1.25vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+input, textarea{
+    font-size: 1vw;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 1vw;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    accent-color: black;
+    height: 1vw;
+    width: 1vw;
+}
+
+textarea{
+    font-size: 1.5vw;
+}
+
+#radio{
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #formulario{
+        height: 140vw;
+    }
+
+    #formulario h1{
+        font-size: 7vw;
+    }
+    form{
+        width: 90%;
+    }
+
+    form p{
+        font-size: 4vw;
+    }
+
+    label{
+        font-size: 4vw;
+    }
+
+    input{
+        font-size: 3vw;
+    }
+
+    textarea{
+        font-size: 4.5vw;
+    }
+
+    #radio{
+        font-size: 4vw;
+    }
+
+    input[type="radio"]{
+        width: 3vw;
+        height: 3vw;
+    }
+
+    
+}

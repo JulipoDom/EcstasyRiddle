@@ -1,0 +1,62 @@
+#sobre{
+    padding-top: 2vw;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+@keyframes appear-in {
+    0%{
+        color: white;
+    }
+    100%{
+        color: black;
+    }
+}
+
+#titulo{
+    display: flex;
+    flex: 10%;
+    align-items: center;
+    justify-content: center;
+    animation: appear-in 5s;
+    animation-delay: 0s;
+}
+
+#titulo h1{
+    font-size: 3vw;
+}
+
+#texto{
+    animation: appear-in 5s;
+    display: flex;
+    flex: 90%;
+    margin: 0px 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+}
+
+#texto p{
+    margin-top: 5%;
+    font-size: 2vw;
+    text-align: justify;
+}
+
+#secreto{
+    font-size: 0.05vw;
+    color: white;
+    cursor: default;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #titulo h1{
+        font-size: 9vw;
+    }
+    
+    #texto p {
+        font-size: 5.5vw;
+    }
+ 
+
+}
