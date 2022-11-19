@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-/* General css*/
+
 *{
     margin: 0px;
 }
 
 body{
     overflow-x: hidden;
-    background-color: #fafafa;
+    background-color: #ffffff;
 }
 
 header{
@@ -61,12 +61,13 @@ div#menu{
     font-size: 1.5vw;
     font-family: 'Noto Sans', sans-serif;
     margin-left: 1.5vw;
+    border-bottom: 1px solid transparent;
     
 }
 
 #menu a:hover{
     color: #cccccc;
-    border-bottom: 1px solid  #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 
 section{
@@ -105,6 +106,12 @@ footer h1{
 
 #linguagem img{
     width: 5vw;
+    border: solid 3px transparent;
+    transition: all 0.4s;
+}
+
+#linguagem img:hover{
+    border: solid 3px white;
 }
 
 @keyframes appear-in {

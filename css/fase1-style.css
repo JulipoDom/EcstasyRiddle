@@ -4,11 +4,44 @@
     align-items: center;
     justify-content: center;
 }
+#titulo_fase{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo_fase h2{
+    position: center;
+    left: 1vw;
+    margin-top: 5%;
+    font-size: 2vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#titulo_fase a{
+    position: absolute;
+    left: 83.9%;
+    font-size: 1.2vw;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0.5vw;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    transition: 1s;
+    border: solid 5px transparent
+}
+
+#titulo_fase a:hover{
+    border: solid 5px rgb(151, 151, 151);
+}
 
 #fase1 img{
     height: 50%;
     width: 32%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 
@@ -18,13 +51,13 @@
 }
 
 .respostas label{
-    font-size: 2vw;
+    font-size: 1vw;
     font-family: 'Noto Sans', sans-serif;
 }
 
 .respostas input{
     font-size: 1vw;
-    font-family: 'Noto Sans', sans-serif;;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 @keyframes fade-in-out {
@@ -44,20 +77,87 @@
     
 }
 
-#alerta{
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+.popup {
+    position: relative;
+    display: inline-block;
+    height: 1.4vw;
+    cursor: pointer;
     font-size: 1vw;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 0.1vw;
+    color:white;
+    border: solid 2px gray;
+    border-radius: 0.2vw;
+    background-color: black;
+    padding: 0.1vw 0.5vw;
+  }
+  
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
     color: red;
-    margin-bottom: 5%;
-    opacity: 0%;
-}
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity:1 ;
+    }
+  }
 
 @media only screen and (max-width: 600px) {
     
+    section{
+        height: 190vw;
+    }
+
+    #fase1 h2{
+        font-size: 5vw;
+        margin-top: 10%;
+    }
+    
     #fase1 img{
-        margin-bottom: 10%;
-        width: 70%;
+        margin-top: 10%;
+        margin-bottom: 30%;
+        width: auto;
+        height: 45%;
     }
 
     .respostas{
@@ -75,21 +175,23 @@
         align-items: center;
         height: 5vw;
         font-size: 3vw;
+        width: 30vw;
     }
 
     .resposta input[type="text"]{
         width: 3vw;
     }
 
-    .respostas input[type="button"]{
-        display: flex;
-        align-items: center;
-        height: 6.5vw;
-    }
-
-    #alerta{
+    .popup{
+        margin-left: 1vw;
+        height: 6vw;
+        width: 15vw;
+        text-align: center;  
         font-size: 5vw;
-        margin-bottom: 20%;
+    }
+    .popuptext{
+        width: auto;
+        margin-left: -15vw;
     }
     
 

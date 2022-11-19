@@ -25,7 +25,7 @@
     animation: up-down 3s infinite ease-in-out alternate;
 }
 
-#nome h1{
+#nome h2{
     font-family:'Noto Sans', sans-serif;
     text-align: center;
     font-size: 2vw;
@@ -205,7 +205,7 @@
         background-size: 72vw 72vw;
     }
     
-    #nome h1{
+    #nome h2{
         font-size: 3vw;
     }
     

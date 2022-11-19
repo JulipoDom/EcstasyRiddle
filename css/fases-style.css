@@ -4,7 +4,7 @@
     animation: fade 5s;
 }
 
-#fases h1{
+#fases h2{
     font-size: 3vw;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -60,7 +60,7 @@
         height: 120vw;
     }
 
-    #fases h1{
+    #fases h2{
         font-size: 5vw;
     }
 
