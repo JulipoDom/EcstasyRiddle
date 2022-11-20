@@ -2,8 +2,8 @@ function verificar(){
 
     let resposta = document.getElementById('resposta').value.toLowerCase();
     
-    if(resposta === "pronto"){
-        window.location.href = "fase2.html";
+    if(resposta === "desvendar"){
+        window.location.href = "fase4.html";
         return
     }else{
         let popup = document.getElementById("myPopup");
